@@ -3,10 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Simple Wordpress</title>
+	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<header>
+		<img src="./header-simplewordpress.png" />
+	</header>
 	
-	<p>Olá mundo!</p>
 	
 </body>
 </html>
