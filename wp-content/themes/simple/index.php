@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8" />
-	<title>Simple Wordpress</title>
-	<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-	<header>
-		<img src="./header-simplewordpress.png" />
-	</header>
+<?php get_header(); ?>
 	
-	
-</body>
-</html>
+<section>
+	<div class="container">
+		Container
+	</div>
+
+	<sidebar>
+		Side bar
+	</sidebar>
+</section>
+
+<?php get_footer(); ?>
