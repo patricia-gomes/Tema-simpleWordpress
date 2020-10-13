@@ -9,4 +9,16 @@ function ps_after_setup_theme() {
 	add_theme_support('title-tag');
 	//Insere a logo
 	add_theme_support('custom-logo');
+	//Insere a imagem do post
+	add_theme_support('post-thumbnails');
+}
+//Add side bar
+function ps_widgets() {
+	register_sidebar(array(
+		'name' => __('Sidebar', 'simple'),
+		'id' => 'ps_sidebar',
+		'description' => __('Sidebar theme', 'simple'),
+		'before_title' => '<h4 class="widget_utimos_posts">',
+		'after_title' => '</h4>'
+	));
 }
