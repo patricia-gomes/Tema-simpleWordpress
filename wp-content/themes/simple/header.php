@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>" />
-
 	<?php wp_head(); ?>
+	<meta charset="<?php bloginfo('charset'); ?>" />
+	
 </head>
 <body <?php body_class(); ?>>
-	<header>
+	<header class="header">
 		<?php
 		//Verificando se tem logo
 		if(has_custom_logo()) {

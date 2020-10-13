@@ -1,10 +1,10 @@
 === WebP Express ===
 Contributors: rosell.dk
-Donate link: https://ko-fi.com/rosell
+Donate link: https://wordpress.org/plugins/webp-express/#%0Ahow%20do%20i%20buy%20you%20a%20cup%20of%20coffee%3F%0A
 Tags: webp, images, performance
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 0.17.5
+Stable tag: 0.18.2
 Requires PHP: 5.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -126,30 +126,29 @@ Do not simply remove the plugin without deactivating it first. Deactivation take
 Bread on the table don't come for free, even though this plugin does, and always will. I enjoy developing this, and supporting you guys, but I kind of need the bread too. Please make it possible for me to continue wasting time on this plugin:
 
 * [Buy me a Coffee](https://ko-fi.com/rosell)
-* [Become a backer or sponsor on Patreon](https://www.patreon.com/rosell)
+* [Buy me coffee on a regular basis](https://github.com/sponsors/rosell-dk) and help ensuring my coffee supplies doesn't run dry.
 
 == Supporters of WebP Express ==
 
-**Persons currently backing the project via patreon - Thanks!**
+**Persons currently backing the project via GitHub Sponsors or patreon - Thanks!**
 
 * Max Kreminsky
 * [Mathieu Gollain-Dupont](https://www.linkedin.com/in/mathieu-gollain-dupont-9938a4a/)
+* Ruben Solvang
 
 **Persons who contributed with coffee within the last 30 days (updated biweekly) - Thanks! **
 
+* Katja
+* Devashish Datt Mamgain
 * RobMoore
-* Anon
-* Eder Ribeiro
-* Christian
 
 **Persons who contributed with extra generously amounts of coffee / lifetime backing (>30$) - thanks!:**
 
 * Justin - BigScoots ($105)
 * Sebastian ($99)
 * Tammy Lee ($90)
-* Max Kreminsky ($65)
+* Max Kreminsky ($70)
 * Steven Sullivan ($51)
-
 
 == Frequently Asked Questions ==
 
@@ -722,14 +721,34 @@ Here are my current plans ahead: 0.18 will probably be a file manager-like inter
 
 If you wish to affect priorities, it is certainly possible. You can try to argue your case in the forum or you can simply let the money do the talking. By donating as little as a cup of coffee on [ko-fi.com/rosell](https://ko-fi.com/rosell), you can leave a wish. I shall take these wishes into account when prioritizing between new features.
 
-= How do I buy you a cup of coffee? =
-Easy enough! - [Go here!](https://ko-fi.com/rosell). Or [here](https://buymeacoff.ee/rosell).
+= Can I buy you a cup of coffee? =
+You sure can! To do so, [go here!](https://ko-fi.com/rosell). If payment doesn't work for your country, [try here instead](https://buymeacoff.ee/rosell).
+
+If you want to make sure that my coffee supplies don't run dry, you can even buy me a cup of coffee on a regular basis [by going here](https://github.com/sponsors/rosell-dk)
+
 
 == Screenshots ==
 
 1. WebP Express settings
 
 == Changelog ==
+
+= 0.18.1 =
+*(released: 24 Sep 2020)*
+* Bugfix: Bulk Convert failed to show list on systems that did not have the [utf8-encode()](https://www.php.net/manual/en/function.utf8-encode.php) function.
+
+= 0.18.0 =
+*(released: 24 Sep 2020)*
+* You can now set cache control header in CDN friendly mode too
+* The code for testing what actually works in .htaccess files on the server setup has been moved to a new library: [htaccess-capability-tester](https://github.com/rosell-dk/htaccess-capability-tester). It has been strengthened in the process.
+* Improved diagnosing in the "Live test" buttons
+* Simplified the logic for adding "Vary header" in the .htaccess residing in the cache dir. The logic no longer depends on the Apache module "mod_envif" being installed. mod_envif has Apache "Base" status, which means it is very rarely missing, so I decided not to trigger automatically updating of the .htaccess rules. To apply the change, you must click the button that forces .htaccess regeneration
+* The plugin has a folder called "wod" which contains php scripts for converting an image to webp. This is used for the function that rely on redirect magic to trigger conversion ("Enable redirection to converter?" and "Create webp files upon request?"). The .htaccess file in the "wod" folder in the plugin dir contains directives for modifying access (in order to counterfight rules placed by security plugins for disallows scripts to be run directly). However if these directives has been disallowed in the server setup, any request to a file in the folder will result in a 500 internal server error. To circumvent this, a "wod2" folder has been added, which contains the same scripts, but without the .htaccess. Upon saving, WebP Express now automatically checks which one works, and points to that in the .htaccess rules.
+* Bugfix: webp mime type was not registred in .htaccess in "CDN friendly" mode. This is a minor fix so I decided not to update the .htaccess automatically. To apply it, you must click the button that forces .htaccess regeneration.
+* Bugfix: Bulk convert failed to load the list when there were filenames containing non-unicode characters
+* Added a new way to support me. I'm on [GitHub Sponsors](https://github.com/sponsors/rosell-dk)!
+
+For more info, see the closed issues on the 0.18.0 milestone on the github repository: https://github.com/rosell-dk/webp-express/milestone/33?closed=1
 
 = 0.17.5 =
 *(released: 11 Aug 2020)*
@@ -1160,6 +1179,15 @@ For more info, see the closed issues on the 0.5.0 milestone on our github reposi
 For older releases, check out changelog.txt
 
 == Upgrade Notice ==
+
+= 0.18.2 =
+* Fixed bug on settings page
+
+= 0.18.1 =
+* Minor bug fix for bulk convert
+
+= 0.18.0 =
+* General maintenance and improvements
 
 = 0.17.5 =
 * Various fixes, mainly by community.
