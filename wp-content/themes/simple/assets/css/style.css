@@ -85,13 +85,15 @@ ul {
 	color:black;
 	text-decoration: none;
 }
+.container a {
+	text-decoration: none;
+}
 .side_bar a:hover {
 	color:purple;
 }
-.article a {
+.widget_title a {
 	color:purple;
 	font-size: 28px;
-	text-decoration: none;
 }
 .widget_utimos_posts {
 	font-weight: bold;
@@ -115,6 +117,11 @@ ul {
 }
 .comments_number {
 	color:#353535;
+}
+.previous_page, .next_page a {
+	font-weight: bold;
+	color:black;
+	font-size: 17px;
 }
 
 
