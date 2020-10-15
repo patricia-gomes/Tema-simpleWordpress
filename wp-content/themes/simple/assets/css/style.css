@@ -118,6 +118,16 @@ ul {
 .comments_number {
 	color:#353535;
 }
+.container_pagination {
+	display: flex;
+	justify-content: space-between;
+}
+.previous_page {
+	flex: 2;
+}
+.next_page {
+	flex: 2;
+}
 .previous_page, .next_page a {
 	font-weight: bold;
 	color:black;
