@@ -34,10 +34,11 @@ Esse pequeno projeto tem paginação, leia mais, listagem de artigos em wordpres
 <strong>6-</strong> Depois de ter criado esses dois arquivos o wordpress já reconhece como tema, então pode ir até o painel de controle no menu lateral e clique em 'Aparência' -> 'Temas'. Vai aparecer o nome do seu tema como mostra a imagem abaixo.<br/>
 <img src="assets/images/add_theme.png"><br/>
 <strong>7-</strong> Agora vamos aprender a como colocar uma imagem no nosso tema. Você escolhe uma imagem que vai representar o seu tema e salve ela na pasta principal do tema com o nome 'screenshot.png'<br/>
-<img src="../../../assets/images/screenshot_theme.png"><br/>
+<img src="wp-content/themes/simple/assets/images/screenshot_theme.png"><br/>
 <strong>8-</strong> Só ir de novo no painel de controle no menu lateral e clicar em 'Aparência' -> 'Temas' e já vai aparecer o seu tema com a imagem.<br/>
-<img src="../../../assets/images/image_theme.png"><br/>
+<img src="/wp-content/themes/simple/assets/images/image_theme.png"><br/>
 
 ## Adicionando a logo
 
-<p>Essa imagem abaixo é a logo do blog que foi inserida através do painel de controle no menu lateral em 'Aparência' -> 'Personalizar' -> 'Identidade do site'</p>
+<p>Essa imagem abaixo é a logo do blog que foi inserida através do painel de controle no menu lateral em 'Aparência' -> 'Personalizar' -> 'Identidade do site' e clique em 'inserir logo'</p>
+<img src="assets/images/image_logo.png">
