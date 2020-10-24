@@ -19,26 +19,30 @@ Esse pequeno projeto tem paginação, leia mais, listagem de artigos em wordpres
 <strong>6-</strong> No campo 'Visibilidade nos mecanismos de busca' marque o checkbox se quise que os motores de busca não encontre o seu projeto e exiba o seu projeto wordpress nos bucadores (google, bing, yahoo!). Guarde bem seu nome de usuário e senha você vai precisar deles para fazer login no wordpress.<br/>
 <strong>7-</strong> Depois que preencher todos os campos do formulário vai aparecer uma tela com a mensagem 'Sucesso!' o wordpress foi instalado com sucesso. Agora clicque em 'Acessar' para acessar o painel de controle do wordpress.<br/>
 <strong>8-</strong> Atualize tudo que o wordpress te notificar para atualizar no painel de controle.<br/>
-<strong>9-</strong> E para finalizar o wordpress `5.5.1` cria automaticamente o banco de dados com o nome que você forneceu no formuláro de cadastro.<br/>
+<strong>9-</strong> E para finalizar o wordpress `5.5.1` cria automaticamente o banco de dados com o nome que você forneceu no formuláro de cadastro. Se você quiser alterar o host do banco de dados ou a senha é só ir no arquivo <strong>wp-config.php</strong>.<br/>
 
 ## Criar Tema
 
 <strong>1-</strong> Para desenvolver um tema novo abra a pasta do projeto wordpress navegue até 'wp-content/themes'. Dentro da pasta 'themes' crie uma pasta com o nome do seu tema.<br/>
 <strong>2-</strong> Para esse tema ser reconhecido pelo wordpress precisa ter alguns arquivos dentro da pasta que você acabou de criar. Precisa criar os arquivos <strong>style.css</strong> e <strong>index.php</strong>.<br/>
 <strong>3-</strong> Crie um arquivo style.css dentro da pasta principal do seu <strong>tema</strong>.<br/>
-<img src="assets/images/arquivo_importante1.php"><br/>
+<img src="wp-content/themes/simple/assets/images/arquivo_importante1.php"><br/><br/>
 <strong>4-</strong> E copie o conteúdo comentado no style.css que tem nos outros temas que vem junto com wordpress como o 'twentynineteen' e altere alguns parâmetros: <strong>Theme Name</strong>, <strong>Theme URI</strong>, <strong>Author</strong>, <strong>Description</strong>, <strong>Text Domain</strong>, <strong>Tags</strong><br/>
-<img src="assets/images/aquivo_style_do_tema.png"><br/>
+<img src="wp-content/themes/simple/assets/images/aquivo_style_do_tema.png"><br/>
 <strong>5-</strong> Crie o arquivo index.php e salve dentro da pasta principal do seu <strong>tema</strong>.<br/>
-<img src="assets/images/arquivo_importante.php"><br/>
+<img src="wp-content/themes/simple/assets/images/arquivo_importante.php"><br/><br/>
 <strong>6-</strong> Depois de ter criado esses dois arquivos o wordpress já reconhece como tema, então pode ir até o painel de controle no menu lateral e clique em 'Aparência' -> 'Temas'. Vai aparecer o nome do seu tema como mostra a imagem abaixo.<br/>
-<img src="assets/images/add_theme.png"><br/>
+<img src="wp-content/themes/simple/assets/images/add_theme.png"><br/><br/>
 <strong>7-</strong> Agora vamos aprender a como colocar uma imagem no nosso tema. Você escolhe uma imagem que vai representar o seu tema e salve ela na pasta principal do tema com o nome 'screenshot.png'<br/>
-<img src="wp-content/themes/simple/assets/images/screenshot_theme.png"><br/>
+<img src="wp-content/themes/simple/assets/images/screenshot_theme.png"><br/><br/>
 <strong>8-</strong> Só ir de novo no painel de controle no menu lateral e clicar em 'Aparência' -> 'Temas' e já vai aparecer o seu tema com a imagem.<br/>
-<img src="/wp-content/themes/simple/assets/images/image_theme.png"><br/>
+<img src="/wp-content/themes/simple/assets/images/image_theme.png"><br/><br/>
 
 ## Adicionando a logo
 
-<p>Essa imagem abaixo é a logo do blog que foi inserida através do painel de controle no menu lateral em 'Aparência' -> 'Personalizar' -> 'Identidade do site' e clique em 'inserir logo'</p>
-<img src="assets/images/image_logo.png">
+<p>Essa imagem abaixo é a logo do blog que foi inserida através do painel de controle no menu lateral em 'Aparência' -> 'Personalizar' -> 'Identidade do site' e clique em 'Selecionar logo'</p>
+<img src="wp-content/themes/simple/assets/images/image_logo.png"><br/><br/>
+
+## Adicionando o ícone
+
+<p>O ícone é aquela imagem que tem na aba do navegador. No painel de controle no menu lateral em 'Aparência' -> 'Personalizar' -> 'Identidade do site' e clique em 'Selecionar ícone do site'.</p>
