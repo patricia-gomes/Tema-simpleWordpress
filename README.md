@@ -46,3 +46,9 @@ Esse pequeno projeto tem paginação, leia mais, listagem de artigos em wordpres
 ## Adicionando o ícone
 
 <p>O ícone é aquela imagem que tem na aba do navegador. No painel de controle no menu lateral em 'Aparência' -> 'Personalizar' -> 'Identidade do site' e clique em 'Selecionar ícone do site'.</p>
+
+## Adicionando a Sidebar
+
+<p>Antes de tudo temos de ativar as widgets que são: categorias, posts recentes, nuvem de tags etc. Só depois de ativados é que os widgets vão aparecer no menu lateral do painel wordpress. Em wp-content/themes/simple/functions.php esta um dos código para ativar. E em wp-content/themes/simple/include/helper.php esta a função <strong>ps_widgets()</strong> que faz a ativação do sidebar no wordpress.</p>
+<p>Para adicionar os widgets ao sidebar vai até Aparência -> Widgets e arraste os widgets disponíveis de sua escolha para o Sidebar.</p>
+<img src="wp-content/themes/simple/assets/images/widgets-sidebar.png">
