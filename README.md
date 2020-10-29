@@ -26,11 +26,11 @@ Esse pequeno projeto tem paginação, leia mais, listagem de artigos em wordpres
 <strong>1-</strong> Para desenvolver um tema novo abra a pasta do projeto wordpress navegue até 'wp-content/themes'. Dentro da pasta 'themes' crie uma pasta com o nome do seu tema.<br/>
 <strong>2-</strong> Para esse tema ser reconhecido pelo wordpress precisa ter alguns arquivos dentro da pasta que você acabou de criar. Precisa criar os arquivos <strong>style.css</strong> e <strong>index.php</strong>.<br/>
 <strong>3-</strong> Crie um arquivo style.css dentro da pasta principal do seu <strong>tema</strong>.<br/>
-<img src="wp-content/themes/simple/assets/images/arquivo_importante1.php"><br/><br/>
+<img src="wp-content/themes/simple/assets/images/arquivo_importante1.png"><br/><br/>
 <strong>4-</strong> E copie o conteúdo comentado no style.css que tem nos outros temas que vem junto com wordpress como o 'twentynineteen' e altere alguns parâmetros: <strong>Theme Name</strong>, <strong>Theme URI</strong>, <strong>Author</strong>, <strong>Description</strong>, <strong>Text Domain</strong>, <strong>Tags</strong><br/>
 <img src="wp-content/themes/simple/assets/images/aquivo_style_do_tema.png"><br/>
 <strong>5-</strong> Crie o arquivo index.php e salve dentro da pasta principal do seu <strong>tema</strong>.<br/>
-<img src="wp-content/themes/simple/assets/images/arquivo_importante.php"><br/><br/>
+<img src="wp-content/themes/simple/assets/images/arquivo_importante.png"><br/><br/>
 <strong>6-</strong> Depois de ter criado esses dois arquivos o wordpress já reconhece como tema, então pode ir até o painel de controle no menu lateral e clique em 'Aparência' -> 'Temas'. Vai aparecer o nome do seu tema como mostra a imagem abaixo.<br/>
 <img src="wp-content/themes/simple/assets/images/add_theme.png"><br/><br/>
 <strong>7-</strong> Agora vamos aprender a como colocar uma imagem no nosso tema. Você escolhe uma imagem que vai representar o seu tema e salve ela na pasta principal do tema com o nome 'screenshot.png'<br/>
