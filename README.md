@@ -52,3 +52,11 @@ Esse pequeno projeto tem paginação, leia mais, listagem de artigos em wordpres
 <p>Antes de tudo temos de ativar as widgets que são: categorias, posts recentes, nuvem de tags etc. Só depois de ativados é que os widgets vão aparecer no menu lateral do painel wordpress. Em wp-content/themes/simple/functions.php esta um dos código para ativar. E em wp-content/themes/simple/include/helper.php esta a função <strong>ps_widgets()</strong> que faz a ativação do sidebar no wordpress.</p>
 <p>Para adicionar os widgets ao sidebar vai até Aparência -> Widgets e arraste os widgets disponíveis de sua escolha para o Sidebar.</p>
 <img src="wp-content/themes/simple/assets/images/widgets-sidebar.png">
+
+
+## Paginação
+
+<p>No painel de contrele em <strong>Configurações -> Leitura</strong> e coloque a quantidade de posts por página em <strong>"As páginas do blog mostram no máximo"</strong> e em <strong>"Os feeds RSS mostram os últimos" digite a quantidade que você quer e click em <strong>"Salvar Alterações"</strong>.</p>
+<img src="wp-content/themes/simple/assets/images/pagination-1.png">
+
+<p>O código da paginação esta em wp-content/themes/simple/index.php dentro da <strong>classe pagination</strong>. Adicionei também paginação no post específico com "Próximo Post" e "Post Anterior" esta em wp-content/themes/simple/<strong>single.php</strong> também esta dentro da classe pagination.</p>
