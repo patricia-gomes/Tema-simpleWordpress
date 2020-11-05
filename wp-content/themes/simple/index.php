@@ -26,7 +26,7 @@
 					</div>
 					<!--Exibe a quantidade de comentarios-->
 					<p class="comments_number">
-						<?php comments_number('0 comentários', '1 comentário', '% comentários'); ?>
+						<?php comments_number('0 comentário', '1 comentário', '% comentários'); ?>
 					</p>
 				<?php endwhile; ?>
 			<?php endif; ?>

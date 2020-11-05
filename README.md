@@ -56,7 +56,15 @@ Esse pequeno projeto tem paginação, leia mais, listagem de artigos em wordpres
 
 ## Paginação
 
-<p>No painel de contrele em <strong>Configurações -> Leitura</strong> e coloque a quantidade de posts por página em <strong>"As páginas do blog mostram no máximo"</strong> e em <strong>"Os feeds RSS mostram os últimos" digite a quantidade que você quer e click em <strong>"Salvar Alterações"</strong>.</p>
+<p>No painel de contrele em <strong>Configurações -> Leitura</strong> e coloque a quantidade de posts por página em <strong>"As páginas do blog mostram no máximo"</strong> e em <strong>"Os feeds RSS mostram os últimos"</strong> digite a quantidade que você quer e click em <strong>"Salvar Alterações"</strong>.</p>
 <img src="wp-content/themes/simple/assets/images/pagination-1.png">
 
 <p>O código da paginação esta em wp-content/themes/simple/index.php dentro da <strong>classe pagination</strong>. Adicionei também paginação no post específico com "Próximo Post" e "Post Anterior" esta em wp-content/themes/simple/<strong>single.php</strong> também esta dentro da classe pagination.</p>
+
+## Comentários
+
+<p>O wordpress requer arquivo específico para os comentários. Então, crie um arquivo chamado <strong>comments.php</strong> dentro da pasta do seu tema, no meu caso em wp-content/themes/simple/comments.php. E depois vai até o arquivo single.php e coloque o código resposponsavel para chamar o arquivo do comentário, posicione no html onde você quer que fique a área de comentário.Tem paginação nos comentários também.</p>
+<p>Quando você escrever um comentário e depois que você atualizar a tela ele sumir é porque foi enviado para o seu painel de controle para você <strong>aprovar</strong> ou <strong>rejeitar</strong> o comentário.</p>
+
+<img src="wp-content/themes/simple/assets/images/Painel-comments.png">
+<img src="wp-content/themes/simple/assets/images/aprovar_comentario.png">

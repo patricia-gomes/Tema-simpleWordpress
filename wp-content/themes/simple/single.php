@@ -23,8 +23,16 @@
 					</div>
 					<!--Exibe a quantidade de comentarios-->
 					<p class="comments_number">
-						<?php comments_number('0 comentários', '1 comentário', '% comentários'); ?>
+						<?php comments_number('0 comentário', '1 comentário', '% comentários'); ?>
 					</p>
+					<br/><br/>
+					<!---Area Comentarios---->
+					<!---Antes de exibir tem de verificar se para aquele determinado post foi liberado os comentarios--->
+					<?php 
+						if(comments_open()) {
+							comments_template();/*vai chamar o arquivo responsavel pelos comentarios(comments.php)*/
+						}
+					?>
 				<?php endwhile; ?>
 			<?php endif; ?>
 			<!---Post anterior e o proximo post-->
