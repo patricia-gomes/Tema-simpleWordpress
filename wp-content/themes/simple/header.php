@@ -3,7 +3,8 @@
 <head>
 	<?php wp_head(); ?>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	
+	<!--- Biblioteca de icones --->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body <?php body_class(); ?>>
 	<header class="header">
