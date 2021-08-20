@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="footer">
 	Todos os direitos reservados.
 	<?php wp_footer(); ?>
 </footer>
